@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>StopPic: бесплатная программа для скриншотов и записи экрана на Windows</title>
+<meta name="description" content="StopPic — бесплатная программа с открытым кодом для Windows: скриншоты с пометками и запись экрана в MP4 или GIF со звуком. Установщик 2 МБ, без регистрации, ничего не отправляет в интернет.">
+<link rel="canonical" href="https://paymepain.github.io/ru/">
+<link rel="alternate" hreflang="en" href="https://paymepain.github.io/">
+<link rel="alternate" hreflang="ru" href="https://paymepain.github.io/ru/">
+<link rel="alternate" hreflang="x-default" href="https://paymepain.github.io/">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#16181D">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="StopPic">
+<meta property="og:title" content="StopPic: бесплатная программа для скриншотов и записи экрана">
+<meta property="og:description" content="Выделите область, добавьте подпись или стрелку, и картинка уже в буфере обмена. Экран можно записать в MP4 или GIF вместе со звуком.">
+<meta property="og:url" content="https://paymepain.github.io/ru/">
+<meta property="og:image" content="https://paymepain.github.io/assets/og.png">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:locale:alternate" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="/assets/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "StopPic",
+  "description": "Бесплатная программа с открытым кодом для Windows: скриншоты с пометками и запись экрана в MP4 или GIF со звуком.",
+  "url": "https://paymepain.github.io/ru/",
+  "applicationCategory": "MultimediaApplication",
+  "operatingSystem": "Windows 10, Windows 11",
+  "downloadUrl": "https://github.com/paymepain/stoppic/releases/latest",
+  "license": "https://github.com/paymepain/stoppic/blob/master/LICENSE.txt",
+  "inLanguage": ["ru", "en"],
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "RUB" },
+  "sameAs": ["https://github.com/paymepain/stoppic"]
+}
+</script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter">
+  <symbol id="i-select" viewBox="0 0 24 24"><path d="M6 4v14.5l4-3.8 2.7 6.3 2.6-1.1-2.7-6.2H18z"/></symbol>
+  <symbol id="i-pen" viewBox="0 0 24 24"><path d="M4 19c2.5-6 5.5-6.5 7-3.5s4.5 3 6-4"/><circle cx="18.5" cy="7.5" r="2.5" fill="currentColor" stroke="none"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 19l9.5-9.5"/><path d="M20 4v10L10 4z" fill="currentColor" stroke="none"/></symbol>
+  <symbol id="i-rect" viewBox="0 0 24 24"><rect x="4" y="6" width="16" height="12"/></symbol>
+  <symbol id="i-marker" viewBox="0 0 24 24"><g transform="translate(0 2) rotate(45 12 12)"><path d="M9 2h6v9H9z"/><path d="M9 12h6l-1.5 3v2l-3 1.5V15z" fill="currentColor" stroke="none"/></g><path d="M3 19.5h8v2H3z" fill="currentColor" stroke="none"/></symbol>
+  <symbol id="i-text" viewBox="0 0 24 24"><path d="M5 8V5h14v3M12 5v14M9 19h6"/></symbol>
+  <symbol id="i-blur" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M8.2 3a0.7 0.7 0 1 0 -1.4 0a0.7 0.7 0 1 0 1.4 0zM12.9 3a0.9 0.9 0 1 0 -1.8 0a0.9 0.9 0 1 0 1.8 0zM17.2 3a0.7 0.7 0 1 0 -1.4 0a0.7 0.7 0 1 0 1.4 0zM3.7 7.5a0.7 0.7 0 1 0 -1.4 0a0.7 0.7 0 1 0 1.4 0zM8.7 7.5a1.2 1.2 0 1 0 -2.4 0a1.2 1.2 0 1 0 2.4 0zM13.55 7.5a1.55 1.55 0 1 0 -3.1 0a1.55 1.55 0 1 0 3.1 0zM17.7 7.5a1.2 1.2 0 1 0 -2.4 0a1.2 1.2 0 1 0 2.4 0zM21.7 7.5a0.7 0.7 0 1 0 -1.4 0a0.7 0.7 0 1 0 1.4 0zM3.9 12a0.9 0.9 0 1 0 -1.8 0a0.9 0.9 0 1 0 1.8 0zM9.05 12a1.55 1.55 0 1 0 -3.1 0a1.55 1.55 0 1 0 3.1 0zM14.1 12a2.1 2.1 0 1 0 -4.2 0a2.1 2.1 0 1 0 4.2 0zM18.05 12a1.55 1.55 0 1 0 -3.1 0a1.55 1.55 0 1 0 3.1 0zM21.9 12a0.9 0.9 0 1 0 -1.8 0a0.9 0.9 0 1 0 1.8 0zM3.7 16.5a0.7 0.7 0 1 0 -1.4 0a0.7 0.7 0 1 0 1.4 0zM8.7 16.5a1.2 1.2 0 1 0 -2.4 0a1.2 1.2 0 1 0 2.4 0zM13.55 16.5a1.55 1.55 0 1 0 -3.1 0a1.55 1.55 0 1 0 3.1 0zM17.7 16.5a1.2 1.2 0 1 0 -2.4 0a1.2 1.2 0 1 0 2.4 0zM21.7 16.5a0.7 0.7 0 1 0 -1.4 0a0.7 0.7 0 1 0 1.4 0zM8.2 21a0.7 0.7 0 1 0 -1.4 0a0.7 0.7 0 1 0 1.4 0zM12.9 21a0.9 0.9 0 1 0 -1.8 0a0.9 0.9 0 1 0 1.8 0zM17.2 21a0.7 0.7 0 1 0 -1.4 0a0.7 0.7 0 1 0 1.4 0z"/></symbol>
+  <symbol id="i-number" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" fill-rule="evenodd" d="M12 3a9 9 0 1 1 0 18a9 9 0 1 1 0-18zM10 7.5h3.6v9h-2.2v-6.8H10z"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 14v6.5"/><path d="M8 3.5h8l-1 6.5 3 4H6l3-4z"/></symbol>
+  <symbol id="i-copy" viewBox="0 0 24 24"><rect x="9" y="9" width="11" height="11"/><path d="M5 15V5h10"/></symbol>
+  <symbol id="i-save" viewBox="0 0 24 24"><path d="M12 4v10M7.5 10l4.5 4.5 4.5-4.5M5 19.5h14"/></symbol>
+  <symbol id="i-pause" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M6 5h4v14H6zM14 5h4v14h-4z"/></symbol>
+  <symbol id="i-stop" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M6 6h12v12H6z"/></symbol>
+  <symbol id="i-mic" viewBox="0 0 24 24"><rect x="9" y="3.5" width="6" height="11" rx="3"/><path d="M6 11a6 6 0 0 0 12 0M12 17.5v3"/></symbol>
+  <symbol id="i-sys" viewBox="0 0 24 24"><path d="M4 9h3.5L12 5v14l-4.5-4H4z" fill="currentColor" stroke="none"/><path d="M15.5 9.5a3.5 3.5 0 0 1 0 5M18 7a7 7 0 0 1 0 10"/></symbol>
+</svg>
+
+<a class="skip" href="#main">К содержанию</a>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="/ru/" aria-label="StopPic, главная">
+      <picture>
+        <source srcset="/assets/logo-reversed.svg" media="(prefers-color-scheme: dark)">
+        <img src="/assets/logo.svg" alt="StopPic" width="144" height="40">
+      </picture>
+    </a>
+    <nav class="nav" aria-label="Основное меню">
+      <a class="opt" href="#screenshots">Скриншоты</a>
+      <a class="opt" href="#recording">Запись</a>
+      <a class="opt" href="#install">Скачать</a>
+      <a href="https://github.com/paymepain/stoppic">GitHub</a>
+      <a class="lang" href="/" hreflang="en" lang="en">English</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <div class="hero">
+    <div class="wrap">
+      <h1>Бесплатная программа для скриншотов и записи экрана</h1>
+      <p class="lead">Выделите область, добавьте подпись или стрелку, и картинка уже в буфере обмена. Экран можно записать в MP4 или GIF вместе со звуком.</p>
+      <div class="cta">
+        <a class="btn primary" href="https://github.com/paymepain/stoppic/releases/latest">Скачать для Windows</a>
+        <a class="btn" href="https://github.com/paymepain/stoppic">Исходный код на GitHub</a>
+      </div>
+      <ul class="facts">
+        <li>Бесплатно, лицензия MIT</li>
+        <li>Установщик около 2 МБ</li>
+        <li>Windows 10 и 11</li>
+        <li>Ничего не отправляет в интернет</li>
+      </ul>
+
+      <figure class="shot">
+        <div class="screen" role="img" aria-label="Иллюстрация режима снимка StopPic: выделенная область экрана с номером, стрелкой, подписью и размытым паролем, под ней панель инструментов.">
+          <div class="win" aria-hidden="true">
+            <div class="win-bar"><span>Настройки</span><span class="win-ctl">– □ ×</span></div>
+            <div class="win-body">
+              <div class="win-side"><span>Профиль</span><span class="now">Аккаунт</span><span>Уведомления</span><span>Оплата</span><span>Помощь</span></div>
+              <div class="win-main">
+                <p class="app-title">Настройки аккаунта</p>
+                <div class="app-row"><b>Имя</b><span>Сэм</span></div>
+                <div class="sel">
+                  <i></i><i></i><i></i><i></i>
+                  <div class="app-row"><b>Почта</b><span>sam@example.com</span></div>
+                  <div class="app-row"><span class="num">1</span><b>Пароль</b><span class="secret">correcthorse42</span></div>
+                  <div class="app-row"><b>Тариф</b><span>Команда</span></div>
+                  <div class="app-act">
+                    <span class="app-btn">Сохранить</span>
+                    <svg viewBox="0 0 68 24"><path d="M66 12H14" stroke="#f03a2e" stroke-width="4" fill="none"/><path d="M0 12 18 2V22Z" fill="#f03a2e"/></svg>
+                    <span class="note">Нажать здесь</span>
+                  </div>
+                  <div class="bar">
+                    <span><svg class="icon"><use href="#i-select"/></svg></span>
+                    <span><svg class="icon"><use href="#i-pen"/></svg></span>
+                    <span class="on"><svg class="icon"><use href="#i-arrow"/></svg></span>
+                    <span><svg class="icon"><use href="#i-rect"/></svg></span>
+                    <span><svg class="icon"><use href="#i-marker"/></svg></span>
+                    <span><svg class="icon"><use href="#i-text"/></svg></span>
+                    <span><svg class="icon"><use href="#i-blur"/></svg></span>
+                    <span><svg class="icon"><use href="#i-number"/></svg></span>
+                    <span class="sep"></span>
+                    <span><svg class="icon"><use href="#i-pin"/></svg></span>
+                    <span><svg class="icon"><use href="#i-save"/></svg></span>
+                    <span class="go"><svg class="icon"><use href="#i-copy"/></svg></span>
+                  </div>
+                </div>
+                <div class="app-row"><b>Язык</b><span>Русский</span></div>
+                <div class="app-row"><b>Часовой пояс</b><span>UTC+3</span></div>
+                <div class="app-row"><b>Двухфакторный вход</b><span>Включён</span></div>
+                <div class="app-row"><b>Резервная почта</b><span>Не указана</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <figcaption>Иллюстрация режима снимка.</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <section id="screenshots">
+    <div class="wrap">
+      <h2>Скриншоты с пометками</h2>
+      <p class="sub">Нажмите <kbd>Ctrl+Alt+A</kbd>, и изображение на экране замрёт. Выделите нужную область, добавьте пометки прямо на месте, а затем нажмите <kbd>Enter</kbd>, чтобы скопировать снимок, или <kbd>Ctrl+S</kbd>, чтобы сохранить его в файл. Размытие скроет пароль или лицо.</p>
+      <ul class="tools">
+        <li><svg class="icon" aria-hidden="true"><use href="#i-select"/></svg>Выбор<kbd>V</kbd></li>
+        <li><svg class="icon" aria-hidden="true"><use href="#i-pen"/></svg>Перо<kbd>P</kbd></li>
+        <li><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>Стрелка<kbd>A</kbd></li>
+        <li><svg class="icon" aria-hidden="true"><use href="#i-rect"/></svg>Рамка<kbd>R</kbd></li>
+        <li><svg class="icon" aria-hidden="true"><use href="#i-marker"/></svg>Маркер<kbd>M</kbd></li>
+        <li><svg class="icon" aria-hidden="true"><use href="#i-text"/></svg>Текст<kbd>T</kbd></li>
+        <li><svg class="icon" aria-hidden="true"><use href="#i-blur"/></svg>Размытие<kbd>B</kbd></li>
+        <li><svg class="icon" aria-hidden="true"><use href="#i-number"/></svg>Нумерация<kbd>N</kbd></li>
+      </ul>
+      <div class="notes">
+        <div>
+          <h3>Закрепить поверх окон</h3>
+          <p>Снимок остаётся маленьким окном поверх всех остальных. Удобно, когда нужно что-то держать перед глазами.</p>
+        </div>
+        <div>
+          <h3>Исправить в любой момент</h3>
+          <p>Любую пометку можно передвинуть, перекрасить или удалить. Текст правится двойным кликом. <kbd>Ctrl+Z</kbd> отменяет, <kbd>Ctrl+Y</kbd> повторяет.</p>
+        </div>
+        <div>
+          <h3>Вставить картинку</h3>
+          <p><kbd>Ctrl+V</kbd> вставляет изображение из буфера обмена, а кнопка на панели — из файла.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="recording">
+    <div class="wrap split">
+      <div>
+        <h2>Запись экрана в MP4 или GIF</h2>
+        <ol class="steps">
+          <li>Нажмите <kbd>Ctrl+Alt+R</kbd> и выделите область или нажмите <kbd>Ctrl+A</kbd> для всего экрана.</li>
+          <li>Если нужно, включите микрофон и звук компьютера.</li>
+          <li>Нажмите красную кнопку или <kbd>Enter</kbd>. После отсчёта 3-2-1 начнётся запись.</li>
+        </ol>
+        <ul class="specs">
+          <li>MP4 или GIF</li>
+          <li>15, 30 или 60 кадров в секунду</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-mic"/></svg>Микрофон</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-sys"/></svg>Звук системы</li>
+        </ul>
+      </div>
+      <figure style="margin:0">
+        <div class="recbox" role="img" aria-label="Иллюстрация панели записи StopPic с таймером, паузой и кнопкой стоп.">
+          <div class="recpanel" aria-hidden="true">
+            <i class="dot"></i>
+            <time>00:42</time>
+            <span class="b"><svg class="icon"><use href="#i-pause"/></svg></span>
+            <span class="b stop"><svg class="icon"><use href="#i-stop"/></svg></span>
+          </div>
+        </div>
+        <figcaption>Небольшая панель с таймером, паузой и кнопкой «Стоп». Её можно перетащить, в запись она не попадает.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section id="hotkeys">
+    <div class="wrap">
+      <h2>Горячие клавиши</h2>
+      <p class="sub">Ниже указаны сочетания по умолчанию. Любое можно поменять в настройках, а если оно уже занято другой программой, StopPic предупредит.</p>
+      <table class="keys">
+        <tbody>
+          <tr><th scope="row"><kbd>Ctrl+Alt+A</kbd></th><td>Выделить область и добавить пометки</td></tr>
+          <tr><th scope="row"><kbd>Ctrl+Alt+Shift+A</kbd></th><td>Сразу скопировать весь экран</td></tr>
+          <tr><th scope="row"><kbd>Ctrl+Alt+W</kbd></th><td>Сразу скопировать активное окно</td></tr>
+          <tr><th scope="row"><kbd>Ctrl+Alt+R</kbd></th><td>Выделить область и записать её</td></tr>
+          <tr><th scope="row"><kbd>Ctrl+Alt+Shift+R</kbd></th><td>Сразу начать запись всего экрана</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="install">
+    <div class="wrap">
+      <h2>Скачать и установить</h2>
+      <ol class="steps">
+        <li>На <a href="https://github.com/paymepain/stoppic/releases/latest">странице Releases</a> скачайте файл <code>StopPic_…_x64-setup.exe</code>.</li>
+        <li>Запустите его и выберите русский или английский язык. Потом его можно сменить в настройках.</li>
+        <li>StopPic работает в трее. Настройки открываются из меню значка в трее.</li>
+      </ol>
+      <div class="cta">
+        <a class="btn primary" href="https://github.com/paymepain/stoppic/releases/latest">Скачать для Windows</a>
+      </div>
+      <p class="warn"><strong>Про окно «Система Windows защитила ваш компьютер».</strong> Windows может показать его для новых программ без платной цифровой подписи. Нажмите «Подробнее», затем «Выполнить в любом случае». Весь <a href="https://github.com/paymepain/stoppic">исходный код</a> открыт.</p>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="wrap">
+      <h2>Вопросы</h2>
+      <div class="faq">
+        <details>
+          <summary>StopPic действительно бесплатный?</summary>
+          <p>Да. Программа бесплатна, а её исходный код открыт под лицензией MIT.</p>
+        </details>
+        <details>
+          <summary>Программа куда-то отправляет мои скриншоты?</summary>
+          <p>Нет. StopPic ничего не отправляет по сети. Снимки, записи и настройки хранятся только на вашем компьютере.</p>
+        </details>
+        <details>
+          <summary>Куда сохраняются файлы?</summary>
+          <p>Снимки сохраняются в папку <code>Изображения\Screenshots</code>, другую папку можно выбрать в настройках. Клик по уведомлению открывает папку с файлом.</p>
+        </details>
+        <details>
+          <summary>Звук пишется не с того устройства. Что делать?</summary>
+          <p>Выберите микрофон и устройство вывода в разделе настроек «Запись экрана». «Как в Windows» означает устройство по умолчанию из системных настроек.</p>
+        </details>
+        <details>
+          <summary>Что нужно для работы?</summary>
+          <p>Windows 10 или 11. Если в системе нет компонента Microsoft Edge WebView2 (обычно он уже есть), установщик скачает его сам.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>StopPic, лицензия MIT</span>
+    <nav aria-label="Ссылки в подвале">
+      <a href="https://github.com/paymepain/stoppic/blob/master/README.ru.md">Описание на GitHub</a>
+      <a href="https://github.com/paymepain/stoppic/issues">Сообщить о проблеме</a>
+      <a href="https://github.com/paymepain/stoppic/blob/master/README.ru.md#поддержать-автора">Поддержать автора</a>
+      <a href="/" hreflang="en" lang="en">English</a>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>

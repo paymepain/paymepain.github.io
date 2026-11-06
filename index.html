@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>StopPic: free screenshot and screen recorder for Windows</title>
+<meta name="description" content="StopPic is a free, open-source Windows app for screenshots with annotations and screen recording to MP4 or GIF with sound. A 2 MB installer, no accounts, nothing sent online.">
+<link rel="canonical" href="https://paymepain.github.io/">
+<link rel="alternate" hreflang="en" href="https://paymepain.github.io/">
+<link rel="alternate" hreflang="ru" href="https://paymepain.github.io/ru/">
+<link rel="alternate" hreflang="x-default" href="https://paymepain.github.io/">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#16181D">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="StopPic">
+<meta property="og:title" content="StopPic: free screenshot and screen recorder for Windows">
+<meta property="og:description" content="Select an area, add a label or an arrow, and the picture is on your clipboard. Record your screen to MP4 or GIF, with sound.">
+<meta property="og:url" content="https://paymepain.github.io/">
+<meta property="og:image" content="https://paymepain.github.io/assets/og.png">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="ru_RU">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="/assets/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "StopPic",
+  "description": "A free, open-source Windows app for annotated screenshots and screen recording to MP4 or GIF with sound.",
+  "url": "https://paymepain.github.io/",
+  "applicationCategory": "MultimediaApplication",
+  "operatingSystem": "Windows 10, Windows 11",
+  "downloadUrl": "https://github.com/paymepain/stoppic/releases/latest",
+  "license": "https://github.com/paymepain/stoppic/blob/master/LICENSE.txt",
+  "inLanguage": ["en", "ru"],
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "sameAs": ["https://github.com/paymepain/stoppic"]
+}
+</script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter">
+  <symbol id="i-select" viewBox="0 0 24 24"><path d="M6 4v14.5l4-3.8 2.7 6.3 2.6-1.1-2.7-6.2H18z"/></symbol>
+  <symbol id="i-pen" viewBox="0 0 24 24"><path d="M4 19c2.5-6 5.5-6.5 7-3.5s4.5 3 6-4"/><circle cx="18.5" cy="7.5" r="2.5" fill="currentColor" stroke="none"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 19l9.5-9.5"/><path d="M20 4v10L10 4z" fill="currentColor" stroke="none"/></symbol>
+  <symbol id="i-rect" viewBox="0 0 24 24"><rect x="4" y="6" width="16" height="12"/></symbol>
+  <symbol id="i-marker" viewBox="0 0 24 24"><g transform="translate(0 2) rotate(45 12 12)"><path d="M9 2h6v9H9z"/><path d="M9 12h6l-1.5 3v2l-3 1.5V15z" fill="currentColor" stroke="none"/></g><path d="M3 19.5h8v2H3z" fill="currentColor" stroke="none"/></symbol>
+  <symbol id="i-text" viewBox="0 0 24 24"><path d="M5 8V5h14v3M12 5v14M9 19h6"/></symbol>
+  <symbol id="i-blur" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M8.2 3a0.7 0.7 0 1 0 -1.4 0a0.7 0.7 0 1 0 1.4 0zM12.9 3a0.9 0.9 0 1 0 -1.8 0a0.9 0.9 0 1 0 1.8 0zM17.2 3a0.7 0.7 0 1 0 -1.4 0a0.7 0.7 0 1 0 1.4 0zM3.7 7.5a0.7 0.7 0 1 0 -1.4 0a0.7 0.7 0 1 0 1.4 0zM8.7 7.5a1.2 1.2 0 1 0 -2.4 0a1.2 1.2 0 1 0 2.4 0zM13.55 7.5a1.55 1.55 0 1 0 -3.1 0a1.55 1.55 0 1 0 3.1 0zM17.7 7.5a1.2 1.2 0 1 0 -2.4 0a1.2 1.2 0 1 0 2.4 0zM21.7 7.5a0.7 0.7 0 1 0 -1.4 0a0.7 0.7 0 1 0 1.4 0zM3.9 12a0.9 0.9 0 1 0 -1.8 0a0.9 0.9 0 1 0 1.8 0zM9.05 12a1.55 1.55 0 1 0 -3.1 0a1.55 1.55 0 1 0 3.1 0zM14.1 12a2.1 2.1 0 1 0 -4.2 0a2.1 2.1 0 1 0 4.2 0zM18.05 12a1.55 1.55 0 1 0 -3.1 0a1.55 1.55 0 1 0 3.1 0zM21.9 12a0.9 0.9 0 1 0 -1.8 0a0.9 0.9 0 1 0 1.8 0zM3.7 16.5a0.7 0.7 0 1 0 -1.4 0a0.7 0.7 0 1 0 1.4 0zM8.7 16.5a1.2 1.2 0 1 0 -2.4 0a1.2 1.2 0 1 0 2.4 0zM13.55 16.5a1.55 1.55 0 1 0 -3.1 0a1.55 1.55 0 1 0 3.1 0zM17.7 16.5a1.2 1.2 0 1 0 -2.4 0a1.2 1.2 0 1 0 2.4 0zM21.7 16.5a0.7 0.7 0 1 0 -1.4 0a0.7 0.7 0 1 0 1.4 0zM8.2 21a0.7 0.7 0 1 0 -1.4 0a0.7 0.7 0 1 0 1.4 0zM12.9 21a0.9 0.9 0 1 0 -1.8 0a0.9 0.9 0 1 0 1.8 0zM17.2 21a0.7 0.7 0 1 0 -1.4 0a0.7 0.7 0 1 0 1.4 0z"/></symbol>
+  <symbol id="i-number" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" fill-rule="evenodd" d="M12 3a9 9 0 1 1 0 18a9 9 0 1 1 0-18zM10 7.5h3.6v9h-2.2v-6.8H10z"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 14v6.5"/><path d="M8 3.5h8l-1 6.5 3 4H6l3-4z"/></symbol>
+  <symbol id="i-copy" viewBox="0 0 24 24"><rect x="9" y="9" width="11" height="11"/><path d="M5 15V5h10"/></symbol>
+  <symbol id="i-save" viewBox="0 0 24 24"><path d="M12 4v10M7.5 10l4.5 4.5 4.5-4.5M5 19.5h14"/></symbol>
+  <symbol id="i-pause" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M6 5h4v14H6zM14 5h4v14h-4z"/></symbol>
+  <symbol id="i-stop" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M6 6h12v12H6z"/></symbol>
+  <symbol id="i-mic" viewBox="0 0 24 24"><rect x="9" y="3.5" width="6" height="11" rx="3"/><path d="M6 11a6 6 0 0 0 12 0M12 17.5v3"/></symbol>
+  <symbol id="i-sys" viewBox="0 0 24 24"><path d="M4 9h3.5L12 5v14l-4.5-4H4z" fill="currentColor" stroke="none"/><path d="M15.5 9.5a3.5 3.5 0 0 1 0 5M18 7a7 7 0 0 1 0 10"/></symbol>
+</svg>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="/" aria-label="StopPic home">
+      <picture>
+        <source srcset="/assets/logo-reversed.svg" media="(prefers-color-scheme: dark)">
+        <img src="/assets/logo.svg" alt="StopPic" width="144" height="40">
+      </picture>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a class="opt" href="#screenshots">Screenshots</a>
+      <a class="opt" href="#recording">Recording</a>
+      <a class="opt" href="#install">Download</a>
+      <a href="https://github.com/paymepain/stoppic">GitHub</a>
+      <a class="lang" href="/ru/" hreflang="ru" lang="ru">Русский</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <div class="hero">
+    <div class="wrap">
+      <h1>Free screenshots and screen recording for Windows</h1>
+      <p class="lead">Select an area, add a label or an arrow, and the picture is already on your clipboard. You can also record your screen to MP4 or GIF, with sound.</p>
+      <div class="cta">
+        <a class="btn primary" href="https://github.com/paymepain/stoppic/releases/latest">Download for Windows</a>
+        <a class="btn" href="https://github.com/paymepain/stoppic">Source code on GitHub</a>
+      </div>
+      <ul class="facts">
+        <li>Free, MIT license</li>
+        <li>About 2 MB installer</li>
+        <li>Windows 10 and 11</li>
+        <li>Nothing is sent online</li>
+      </ul>
+
+      <figure class="shot">
+        <div class="screen" role="img" aria-label="Illustration of the StopPic capture overlay: a selected screen area with a number, an arrow, a label and a blurred password, and the toolbar below it.">
+          <div class="win" aria-hidden="true">
+            <div class="win-bar"><span>Settings</span><span class="win-ctl">– □ ×</span></div>
+            <div class="win-body">
+              <div class="win-side"><span>Profile</span><span class="now">Account</span><span>Notifications</span><span>Billing</span><span>Help</span></div>
+              <div class="win-main">
+                <p class="app-title">Account settings</p>
+                <div class="app-row"><b>Name</b><span>Sam</span></div>
+                <div class="sel">
+                  <i></i><i></i><i></i><i></i>
+                  <div class="app-row"><b>Email</b><span>sam@example.com</span></div>
+                  <div class="app-row"><span class="num">1</span><b>Password</b><span class="secret">correcthorse42</span></div>
+                  <div class="app-row"><b>Plan</b><span>Team</span></div>
+                  <div class="app-act">
+                    <span class="app-btn">Save changes</span>
+                    <svg viewBox="0 0 68 24"><path d="M66 12H14" stroke="#f03a2e" stroke-width="4" fill="none"/><path d="M0 12 18 2V22Z" fill="#f03a2e"/></svg>
+                    <span class="note">Click here</span>
+                  </div>
+                  <div class="bar">
+                    <span><svg class="icon"><use href="#i-select"/></svg></span>
+                    <span><svg class="icon"><use href="#i-pen"/></svg></span>
+                    <span class="on"><svg class="icon"><use href="#i-arrow"/></svg></span>
+                    <span><svg class="icon"><use href="#i-rect"/></svg></span>
+                    <span><svg class="icon"><use href="#i-marker"/></svg></span>
+                    <span><svg class="icon"><use href="#i-text"/></svg></span>
+                    <span><svg class="icon"><use href="#i-blur"/></svg></span>
+                    <span><svg class="icon"><use href="#i-number"/></svg></span>
+                    <span class="sep"></span>
+                    <span><svg class="icon"><use href="#i-pin"/></svg></span>
+                    <span><svg class="icon"><use href="#i-save"/></svg></span>
+                    <span class="go"><svg class="icon"><use href="#i-copy"/></svg></span>
+                  </div>
+                </div>
+                <div class="app-row"><b>Language</b><span>English</span></div>
+                <div class="app-row"><b>Time zone</b><span>UTC+3</span></div>
+                <div class="app-row"><b>Two-factor sign-in</b><span>On</span></div>
+                <div class="app-row"><b>Backup email</b><span>Not set</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <figcaption>Illustration of the capture overlay.</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <section id="screenshots">
+    <div class="wrap">
+      <h2>Screenshots with annotations</h2>
+      <p class="sub">Press <kbd>Ctrl+Alt+A</kbd> and the screen freezes. Select the area you need, mark it up right there, then press <kbd>Enter</kbd> to copy it or <kbd>Ctrl+S</kbd> to save it to a file. Blur hides a password or a face.</p>
+      <ul class="tools">
+        <li><svg class="icon" aria-hidden="true"><use href="#i-select"/></svg>Select<kbd>V</kbd></li>
+        <li><svg class="icon" aria-hidden="true"><use href="#i-pen"/></svg>Pen<kbd>P</kbd></li>
+        <li><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>Arrow<kbd>A</kbd></li>
+        <li><svg class="icon" aria-hidden="true"><use href="#i-rect"/></svg>Rectangle<kbd>R</kbd></li>
+        <li><svg class="icon" aria-hidden="true"><use href="#i-marker"/></svg>Highlighter<kbd>M</kbd></li>
+        <li><svg class="icon" aria-hidden="true"><use href="#i-text"/></svg>Text<kbd>T</kbd></li>
+        <li><svg class="icon" aria-hidden="true"><use href="#i-blur"/></svg>Blur<kbd>B</kbd></li>
+        <li><svg class="icon" aria-hidden="true"><use href="#i-number"/></svg>Numbering<kbd>N</kbd></li>
+      </ul>
+      <div class="notes">
+        <div>
+          <h3>Pin it on top</h3>
+          <p>Keep a screenshot as a small window above all others, for anything you need in front of you.</p>
+        </div>
+        <div>
+          <h3>Change anything later</h3>
+          <p>Move, recolor or delete any annotation. Double-click text to edit it. <kbd>Ctrl+Z</kbd> undoes, <kbd>Ctrl+Y</kbd> redoes.</p>
+        </div>
+        <div>
+          <h3>Paste images in</h3>
+          <p><kbd>Ctrl+V</kbd> adds an image from the clipboard, and the toolbar button inserts one from a file.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="recording">
+    <div class="wrap split">
+      <div>
+        <h2>Screen recording to MP4 or GIF</h2>
+        <ol class="steps">
+          <li>Press <kbd>Ctrl+Alt+R</kbd> and select an area, or <kbd>Ctrl+A</kbd> for the whole screen.</li>
+          <li>Turn on the microphone and computer sound if you need them.</li>
+          <li>Press the red button or <kbd>Enter</kbd>. After a 3-2-1 countdown, recording starts.</li>
+        </ol>
+        <ul class="specs">
+          <li>MP4 or GIF</li>
+          <li>15, 30 or 60 FPS</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-mic"/></svg>Microphone</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-sys"/></svg>System sound</li>
+        </ul>
+      </div>
+      <figure style="margin:0">
+        <div class="recbox" role="img" aria-label="Illustration of the StopPic recording panel with a timer, pause and stop.">
+          <div class="recpanel" aria-hidden="true">
+            <i class="dot"></i>
+            <time>00:42</time>
+            <span class="b"><svg class="icon"><use href="#i-pause"/></svg></span>
+            <span class="b stop"><svg class="icon"><use href="#i-stop"/></svg></span>
+          </div>
+        </div>
+        <figcaption>A small panel with a timer, pause and stop. You can drag it around, and it won't appear in the recording.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section id="hotkeys">
+    <div class="wrap">
+      <h2>Hotkeys</h2>
+      <p class="sub">The defaults are below. Change any of them in the settings, and StopPic will tell you if another app already uses a shortcut.</p>
+      <table class="keys">
+        <tbody>
+          <tr><th scope="row"><kbd>Ctrl+Alt+A</kbd></th><td>Select an area and annotate it</td></tr>
+          <tr><th scope="row"><kbd>Ctrl+Alt+Shift+A</kbd></th><td>Copy the whole screen right away</td></tr>
+          <tr><th scope="row"><kbd>Ctrl+Alt+W</kbd></th><td>Copy the active window right away</td></tr>
+          <tr><th scope="row"><kbd>Ctrl+Alt+R</kbd></th><td>Select an area and record it</td></tr>
+          <tr><th scope="row"><kbd>Ctrl+Alt+Shift+R</kbd></th><td>Record the whole screen right away</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="install">
+    <div class="wrap">
+      <h2>Download and install</h2>
+      <ol class="steps">
+        <li>On the <a href="https://github.com/paymepain/stoppic/releases/latest">Releases page</a>, download <code>StopPic_…_x64-setup.exe</code>.</li>
+        <li>Run it and choose English or Russian. You can change the language later in the settings.</li>
+        <li>StopPic stays in the tray. Open its settings from the tray menu.</li>
+      </ol>
+      <div class="cta">
+        <a class="btn primary" href="https://github.com/paymepain/stoppic/releases/latest">Download for Windows</a>
+      </div>
+      <p class="warn"><strong>About the "Windows protected your PC" warning.</strong> Windows may show it for new apps that don't have a paid digital signature. Click "More info", then "Run anyway". The full <a href="https://github.com/paymepain/stoppic">source code</a> is public.</p>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="wrap">
+      <h2>Questions</h2>
+      <div class="faq">
+        <details>
+          <summary>Is StopPic really free?</summary>
+          <p>Yes. It's free, and its source code is open under the MIT license.</p>
+        </details>
+        <details>
+          <summary>Does it send my screenshots anywhere?</summary>
+          <p>No. StopPic sends nothing over the network. Screenshots, recordings and settings stay on your computer.</p>
+        </details>
+        <details>
+          <summary>Where are my files saved?</summary>
+          <p>Screenshots go to <code>Pictures\Screenshots</code>, and you can choose another folder in the settings. Clicking the notification opens the folder with the file.</p>
+        </details>
+        <details>
+          <summary>The sound comes from the wrong device. What do I do?</summary>
+          <p>Pick the microphone and output device in the "Screen recording" section of the settings. "Windows default" means the device chosen in system settings.</p>
+        </details>
+        <details>
+          <summary>What do I need to run it?</summary>
+          <p>Windows 10 or 11. If the Microsoft Edge WebView2 component is missing (it's usually already there), the installer downloads it automatically.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>StopPic, MIT license</span>
+    <nav aria-label="Footer">
+      <a href="https://github.com/paymepain/stoppic">GitHub</a>
+      <a href="https://github.com/paymepain/stoppic/issues">Report a problem</a>
+      <a href="https://github.com/paymepain/stoppic#support-the-author">Support the author</a>
+      <a href="/ru/" hreflang="ru" lang="ru">Русский</a>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>
